@@ -1,0 +1,28 @@
+[task]
+name = "task1"
+foreground = "D:\\Workspace\\fgbgg\\sample\\foreground"
+background = "D:\\Workspace\\fgbgg\\sample\\background"
+result = "D:\\Workspace\\fgbgg\\sample\\result"
+tag = false # unimplemented
+
+[generate]
+foreground_position = "center" # left/right/top/bottom/top-left/top-right/bottom-left/bottom-right/center/random
+threshold_max = 0.3 # 0.0 < f32 value < 1.0
+threshold_min = 0.2 # 0.0 < f32 value < 1.0
+mode = "all" # loop/all/random
+counter = 20 # int value > 0
+save_alpha = true
+save_jpg = true
+
+[statistic]
+source = "D:\\Workspace\\fgbgg\\sample\\result\\origin"
+target = "D:\\Workspace\\animal-matting\\samples\\result_alpha"
+base = "default" # background/foreground/position
+
+[preprocess]
+format_target = "png" # jpg/jpeg/webp/png(STRONGLY SUGGESTED)
+clone = false # unimplemented
+
+[tag]
+
+
